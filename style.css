@@ -2,7 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+}
+
+@keyframes gelis {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+body{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero {
@@ -29,42 +46,53 @@
     justify-content: space-between;
     background-color: #47474757;
     border-radius: 50px;
-
-   
-    
-    
-   
- 
-
-
+    animation: gelis 1s ease-in-out forwards;
 }
-
-
 
 .logo {
     width: 200px;
-    
 }
 
 nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 40px;
-    
-   
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 17px;
     color: white;
-    font-weight: 700;
-    font-size: 20px;
-    
-
-
-
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
 }
+
+nav ul li a::after {
+    content: '';
+    background:#d6a33b;
+    width: 135%;
+    height: 200%;
+    border-radius: 30px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
 
 .content {
     text-align: center;
@@ -73,41 +101,68 @@ nav ul li a {
 .content h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #b48525;
-    margin-bottom: 40px;
-    
-   
+    color: #d6a33b;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 2px #816120;
+    animation: gelis 1.4s ease-in-out forwards;
 }
+
 .content p {
     font-size: 15px;
     font-weight: 600;
-    color: white;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    color: rgb(218, 215, 215);
+    text-shadow: 2px 2px 4px rgb(66, 63, 63);
+    line-height: 1.5;
+    animation: gelis 1.8s ease-in-out forwards;
 }
-.content a {
+
+.kesfetbutton{
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    color: rgb(236, 169, 0);
-    background-color: grey;
+    color: whitesmoke;   
+    background-color:  #f0ac25;
     padding: 14px 70px;
     border-radius: 50px;
-    border: 2px solid black;
     margin-top: 20px;
+    animation: gelis 2.2s ease-in-out forwards;
+    cursor: pointer;
+    border: none;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.kesfetbutton:hover{
+    color:  #fcb604;
+}
+
+.kesfetbutton::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(138, 136, 136);
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.kesfetbutton:hover::before{
+    height: 180%;
 }
 
 .back-video {
     position: absolute;
     right: 0;
-  top: 0;
-  bottom: 0;
+    top: 0;
+    bottom: 0;
     z-index: -1;
     width:1920px;
     height:1080px;
     filter: contrast(100%) brightness(0.9) saturate(90%) blur(0.7px);
-    
-   
-   
 }
 
 @media (max-aspect-ratio:16/9) {
