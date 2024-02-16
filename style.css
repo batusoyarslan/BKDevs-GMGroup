@@ -144,7 +144,7 @@ nav ul li a:hover::after{
     left: 0;
     width: 100%;
     height: 0%;
-    background: rgb(138, 136, 136);
+    background: rgb(230, 224, 224);
     z-index: -1;
     transition: 0.8s;
     top: 0;
@@ -177,8 +177,7 @@ nav ul li a:hover::after{
 .blok{
     width: 100%;
     height: 300px;
-    background: rgb(18,44,108);
-    background: linear-gradient(135deg, rgb(94, 94, 97) 17%, rgb(55, 55, 56) 94%);   
+    /* background: linear-gradient(135deg, rgb(138, 138, 139) 17%, rgb(168, 168, 168) 94%);    */
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
@@ -190,12 +189,13 @@ nav ul li a:hover::after{
     width: 550px;
     height: 225px;
     background: rgb(196,132,2);
-    background: linear-gradient(135deg, rgba(196,132,2,1) 17%, rgba(255,204,103,1) 100%);
+    background: linear-gradient(135deg, rgb(223, 159, 30) 17%, rgba(255,204,103,1) 100%);
     text-align: center;
     border-radius: 20px;
     color: whitesmoke;
     padding-top: 20px;
     margin-top: 20px;
+    box-shadow: 3px 3px 3px 3px rgb(221, 150, 18);
 }
 
 
@@ -206,11 +206,87 @@ nav ul li a:hover::after{
 
 .secondPage{
     width: 1350px;
-    background-color: #fcb604;
+    /* background-color: #fff; */
     height: 2300px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
+.container {
+    width: 100%;
+   height: 100vh;
+    padding: 0 8%;
+}
+
+.container h1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 700;
+    position: relative;
+}
+
+.container h1::after{
+    content: '';
+    background: #585858;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 150px;
+    
+}
+
+.service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+    box-shadow: 3px 3px 3px 3px rgb(255, 187, 0);
+
+}
+
+.service i{
+font-size: 40px;
+margin-bottom:10px;
+color: #646464;
+
+}
+.service h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.service:hover {
+    background:#f1a949 ;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 3px #f1a949;
+
+}
+.service:hover i{
+    color: #fff;
+
+}
+.secondpage-image{
+    
+    position: absolute;
+    right: 0;
+    top: 110%;
+    bottom: 0;
+    z-index: -1;
+    height:1700px;
+    width: 100%;
+
+}
 
