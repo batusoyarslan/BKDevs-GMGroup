@@ -203,3 +203,14 @@ nav ul li a:hover::after{
     padding-top: 10px;
     font-weight: 600;
 }
+
+.secondPage{
+    width: 1350px;
+    background-color: #fcb604;
+    height: 2300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
