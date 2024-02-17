@@ -207,7 +207,7 @@ nav ul li a:hover::after{
 .secondPage{
     width: 1350px;
     /* background-color: #fff; */
-    height: 2300px;
+    height: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -285,8 +285,91 @@ color: #646464;
     top: 110%;
     bottom: 0;
     z-index: -1;
-    height:1700px;
+    height:1800px;
     width: 100%;
 
 }
 
+.about {
+    
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #24222A;
+    
+
+}
+ .about-img {
+    height: auto;
+    width: 420px;
+    
+ }
+
+ .about-text {
+    width: 550px;
+    color: #fcb604;
+/* text-align: center; */
+
+ }
+ .main{
+    width: 1150px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    
+ }
+
+.about-text-h1{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.about-text-h5{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.about-text-p{
+    font-size:16px;
+    font-weight: 500;
+}
+
+.about-button{
+ display: flex;
+ margin-top: 30px;
+position: relative;
+color: #fff;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 30px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 7px;
+
+}
+
+.about-button:hover{
+   
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+
+}
+
+about-button:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+about-button span {
+    position: relative;
+    z-index: -1;
+}
