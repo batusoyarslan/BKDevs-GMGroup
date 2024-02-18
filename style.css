@@ -325,11 +325,13 @@ color: #646464;
     font-size: 30px;
     font-weight: 700;
     display: flex;
-    justify-content: center;
+    
 }
 .about-text-h5{
     font-size: 20px;
     font-weight: 600px;
+    margin-top: 20px ;
+    margin-bottom: 20px;
 }
 
 .about-text-p{
@@ -356,7 +358,7 @@ color: #fff;
 }
 
 .about-button:hover{
-   
+   color: white;
     background: var(--clr);
     box-shadow: 0 0 35px var(--clr);
 
@@ -369,7 +371,67 @@ about-button:before{
     background: #27282c;
 }
 
-about-button span {
+.footer {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: #131218;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 16px;
+    line-height: 20px;
+   
+    
+
+}
+.row-footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-top: 20px;
     position: relative;
-    z-index: -1;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 2px solid white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.footer-number {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    
+
+
+}
+
+ul li a{
+    text-decoration: none;
+    margin-top: 20px;
+    
+    
+}
+
+.col-h3 {
+    width: fit-content;
+    margin-top: 20px;
+    position: relative;
 }
