@@ -390,7 +390,9 @@ about-button:before{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
+    
 }
+
 
 .referans-baslik{
     text-align: center;
@@ -398,6 +400,14 @@ about-button:before{
     padding-top: 20px;
     color: white;
 }
+
+.sertifika-baslik{
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    color: black;
+}
+
 
 
 .footer {
@@ -520,6 +530,7 @@ form button:hover{
         width: 61%;
         
     }
+   
 }
 
 
