@@ -361,7 +361,7 @@ color: #fff;
    color: white;
     background: var(--clr);
     box-shadow: 0 0 35px var(--clr);
-
+    cursor: pointer;
 }
 
 about-button:before{
@@ -370,6 +370,35 @@ about-button:before{
     inset: 2px;
     background: #27282c;
 }
+
+.referans{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #24222A;
+}
+
+
+.satir{
+    display: block;
+    text-align: center;
+
+}
+
+.satir img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.referans-baslik{
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    color: white;
+}
+
 
 .footer {
     width: 100%;
@@ -561,3 +590,4 @@ textarea:focus-within {
     cursor: pointer;
 
 }
+
