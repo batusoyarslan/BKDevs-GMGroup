@@ -207,7 +207,7 @@ nav ul li a:hover::after{
 .secondPage{
     width: 1350px;
     /* background-color: #fff; */
-    height: 1400px;
+    height: 1450px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -272,14 +272,23 @@ color: #646464;
     color: #fff;
     transform: scale(1.05);
     box-shadow: 3px 3px 3px 3px #f1a949;
-
 }
+
+.service:hover .service-button,
+.service:hover .service-button a{
+    background-color: #ece5e5;
+    color: #f1a949;
+}
+
+.service:hover .service-button:hover{
+    transform: scale(1.05);
+}
+
 .service:hover i{
     color: #fff;
 
 }
 .secondpage-image{
-    
     position: absolute;
     right: 0;
     top: 110%;
@@ -287,8 +296,25 @@ color: #646464;
     z-index: -1;
     height:1800px;
     width: 100%;
-
 }
+
+.service-button{
+    position: relative;
+    top: 15px;
+}
+
+
+.service-button,
+.service a{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #f1a949;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
 
 .about {
     
