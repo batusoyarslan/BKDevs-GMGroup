@@ -21,6 +21,7 @@ body{
     font-weight: 400;
     font-style: normal;
     height: 400vh;
+    
 }
 
 .hero {
@@ -594,14 +595,10 @@ form button:hover{
 textarea {
     background-color: #fff;
     width: 30%;
-    /* margin-left: 12%; */
-    font-size: 13px;
-    padding: 16px 16px;
-    border-radius: 10px;
-    border-color: black;
     
-}
-.contact input:focus-within {
+    
+ } 
+ .contact input:focus-within {
     outline: none;
     border-color: black;
     border-width: 3px;
@@ -629,5 +626,192 @@ textarea:focus-within {
     opacity: 80%;
     cursor: pointer;
 
+} 
+
+.container2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1c1c20;
+    width: 100%;
+   
 }
+.container2 .content2{
+    display: flex;
+    justify-content: center;
+    
+   
+    
+}
+ .content2 .image-box{
+     max-width: 50%; 
+  
+    
+} 
+
+.content2 .image-box img{
+    width: 55%;
+
+
+  
+    
+}
+
+.content2 .topic{
+margin-top: 30px;
+font-size: 22px;
+font-weight: 500;
+color: #ffffff;
+    
+}
+
+.content2 form{
+width: 30%;
+
+
+}
+
+.content2 .input-box {
+height: 50px;
+width: 100%;
+margin: 16px 0 ;
+position: relative;
+}
+
+.content2 .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #ffffff;
+    border: 2px solid transparent;
+
+    /* transition: all 0.3s ease; */
+
+}
+.content2 .input-box input:focus, 
+.content2 .input-box input:valid{
+    border-color: #ff9900;
+    background-color:#ffffff ;
+   
+}
+
+.content2 .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    font-size: 15px;
+    color: #535353;
+    pointer-events: none;
+  
+    /* transform: translateY(-50%); */
+    /* transition: all 0.3s ease; */
+}
+
+.content2 .input-box input:focus ~ label,
+.content2 .input-box input:valid ~ label {
+    display:14px ;
+    top: 0;
+    opacity: 0;
+    left: 12px;
+    color: #dd8604;
+
+    /* background: #fff; */
+
+}
+
+.content2 .message-box{
+    min-height: 100px;
+    position: relative;
+}
+
+.content2 .message-box textarea{
+  margin-top: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    resize: none;
+    background: #ffffff;
+    border: 2px solid transparent;
+    outline: none;
+    /* transition: all 0.3s ease; */
+
+}
+/* .content2 .message-box textarea:focus {
+    /* border-color: #ba24c2;
+    background-color: #fff; 
+} */
+
+
+
+
+.content2 .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    /* left: 18px;
+    top: 6px; */
+    pointer-events: none;
+    /* transition: all 0.3s ease; */
+
+}
+
+.content2 .message-box textarea:focus ~ label {
+    left: 12px;
+    top: -10px;
+    /* color: #ba24c2; */
+    font-size: 14px;
+    opacity: 0;
+
+
+
+}
+
+.content2 .input-box input[type="submit"]{
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 18px;
+    /* color:#fff ; */
+    background: #ec9511;
+    cursor: pointer;
+    letter-spacing: 1px;
+    /* transition: all 0.3s ease; */
+}
+
+.content2 .input-box input[type="submit"]:hover {
+    background-color: #dd9c10;
+
+}
+
+/* .content2 input {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+} */
+@media(max-width:700px) {
+    .content2 .image-box{
+        max-width: 70%;
+    }
+    .content2{
+        padding: 10px 0;
+    }
+}
+
+@media(max-width:900px) {
+    .content2 .image-box{
+        display: none;
+    
+    }
+    .content2 form {
+        width: 100%;
+        margin-right: 30px;
+    }
+}
+   
+
 
