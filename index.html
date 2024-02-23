@@ -148,22 +148,23 @@
 
             </div>
         
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="topic">BİZİMLE İLETİŞİME GEÇİN</div>
+            <input type="hidden" name="access_key" value="cdcc1853-b006-4bfe-9984-068eadaa7f88">
             <div class="input-box">
-                <input type="text" required>
+                <input type="text" required name="Name">
                 <label>İSMİNİZ</label>
             </div>
             <div class="input-box">
-                <input type="text" required>
+                <input type="text" required name="Surname">
                 <label>SOY İSMİNİZ</label>
             </div>
             <div class="input-box">
-                <input type="text" required>
+                <input type="text" required name="Email">
                 <label>E-MAİL ADRESİNİZ</label>
             </div>
             <div class="message-box">
-                <textarea placeholder="..."></textarea>
+                <textarea placeholder="..." name="Message"></textarea>
                 
             </div>
             <div class="input-box">
