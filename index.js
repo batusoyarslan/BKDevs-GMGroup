@@ -4,7 +4,7 @@ function gecisYap() {
 
     if (button.innerText === 'Daha Fazla ˅') {
         window.scrollTo({
-            top: document.getElementById("video-bottom").offsetTop + videoYukseklik,
+            top: document.getElementById("video-bottom").offsetTop + 535,
             behavior: 'smooth' 
         });
         button.innerText = 'Yukarı Çık ˄'; 
