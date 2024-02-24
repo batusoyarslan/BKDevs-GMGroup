@@ -167,12 +167,9 @@ nav ul li a:hover::after{
     filter: contrast(100%) brightness(0.9) saturate(90%) blur(0.7px);
 }
 
-@media (max-aspect-ratio:16/9) {
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
-}
+
+
+
 
 
 .blok{
@@ -197,7 +194,18 @@ nav ul li a:hover::after{
     padding-top: 20px;
     margin-top: 20px;
     box-shadow: 3px 3px 3px 3px rgb(221, 150, 18);
+    overflow:hidden;
 }
+@media only screen and (max-width: 900px) {
+    .blok {
+      gap: 10%;
+      
+    }
+    .blokText{
+        color: #000;
+        font-size: 13px;
+    }
+  }
 
 
 .blokP{
@@ -242,7 +250,7 @@ nav ul li a:hover::after{
 .row {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    gap: 150px;
+    grid-gap: 150px;
     
 }
 
@@ -299,11 +307,10 @@ color: #646464;
     width: 100%;
 }
 
-.service-button{
-    position: relative;
-    top: 15px;
-}
 
+
+  
+  
 
 .service-button,
 .service a{
@@ -397,6 +404,37 @@ about-button:before{
     inset: 2px;
     background: #27282c;
 }
+
+@media only screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .about-img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .about-text {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .about-img {
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .about-text-h1 {
+      font-size: 24px;
+    }
+    .about-text-h5 {
+      font-size: 18px;
+    }
+    .about-text-p {
+      font-size: 14px;
+    }
+  }
+      
 
 .referans{
     max-width: 100%;
