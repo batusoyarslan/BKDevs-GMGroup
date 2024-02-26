@@ -20,28 +20,24 @@ body{
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    height: 400vh;
+    
     
 }
 
 .hero {
     width: 100%;
     height: 100vh;
-    position: relative;
-    padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
+    overflow: hidden;
 
 }
 
 .navbar {
-    width:1350px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 300px;
-    margin-top: 30px;
+
+    width:clamp(350px , 75vw , 1350px);
     padding: 20px 8%;
     display: flex;
     align-items: center;
@@ -49,6 +45,17 @@ body{
     background-color: #47474757;
     border-radius: 50px;
     animation: gelis 1s ease-in-out forwards;
+}
+.navbar-content{
+    position: absolute;
+    height: 100vh;
+    height: 100vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+   
 }
 
 .logo {
@@ -158,12 +165,14 @@ nav ul li a:hover::after{
 
 .back-video {
     position: absolute;
+    object-fit: cover;
+    object-position: top;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: -1;
-    width:1920px;
-    height:1080px;
+    width:100vw;
+    height:100vh;
     filter: contrast(100%) brightness(0.9) saturate(90%) blur(0.7px);
 }
 
@@ -174,28 +183,27 @@ nav ul li a:hover::after{
 
 .blok{
     width: 100%;
-    height: 300px;
-    /* background: linear-gradient(135deg, rgb(138, 138, 139) 17%, rgb(168, 168, 168) 94%);    */
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 25px;
-    margin-top: 115px;
+    flex-wrap: wrap;
 }
 
 .blokText{
-    width: 550px;
-    height: 225px;
+    width: auto;
+    height: auto;
     background: rgb(196,132,2);
     background: linear-gradient(135deg, rgb(223, 159, 30) 17%, rgba(255,204,103,1) 100%);
     text-align: center;
     border-radius: 20px;
+    margin-top: 50px;
     color: whitesmoke;
-    padding-top: 20px;
-    margin-top: 20px;
+   padding: 30px 30px;
+    
     box-shadow: 3px 3px 3px 3px rgb(221, 150, 18);
     overflow:hidden;
 }
+
 @media only screen and (max-width: 900px) {
     .blok {
       gap: 10%;
@@ -203,34 +211,33 @@ nav ul li a:hover::after{
     }
     .blokText{
         color: #000;
-        font-size: 13px;
+        font-size: 14px;
     }
   }
 
 
 .blokP{
-    padding-top: 10px;
+   
     font-weight: 600;
 }
 
 .secondPage{
-    width: 1350px;
-    /* background-color: #fff; */
-    height: 1450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+   z-index: 0;
+   padding-bottom: 30px;
+   
 }
 
 
 .container {
     width: 100%;
-   height: 100vh;
-    padding: 0 8%;
 }
 
 .container h1 {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     margin-bottom: 60px;
     font-weight: 700;
     position: relative;
@@ -249,8 +256,9 @@ nav ul li a:hover::after{
 
 .row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 535px));
     grid-gap: 150px;
+    justify-content: center;
     
 }
 
@@ -261,7 +269,7 @@ nav ul li a:hover::after{
     font-size: 17px;
     cursor: pointer;
     background: transparent;
-    transition: transform 0.5s, background 0.5s;
+    transition: transform 0.5s;
     box-shadow: 3px 3px 3px 3px rgb(255, 187, 0);
 
 }
@@ -299,18 +307,13 @@ color: #646464;
 }
 .secondpage-image{
     position: absolute;
-    right: 0;
-    top: 110%;
-    bottom: 0;
+    height: 100%;
     z-index: -1;
-    height:1800px;
     width: 100%;
+    object-fit: cover;
+    
 }
 
-
-
-  
-  
 
 .service-button,
 .service a{
@@ -455,6 +458,7 @@ about-button:before{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;
+   
     
 }
 
