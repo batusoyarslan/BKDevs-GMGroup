@@ -34,6 +34,58 @@ body{
     overflow: hidden;
 
 }
+.social {
+    position: fixed;
+    height: 10vh;
+   top: 75%;
+  right: 0;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    transform: translate(75%, 0);
+    transition: transform 1s ease-in-out;
+   z-index: 1000;
+    justify-content: start;
+}
+.social a {
+    display: flex;
+    color: #fff;
+    background: bisque;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    
+    padding: 20px;
+    width: 300px;
+    transition: 1s;
+    transition-property: transform;
+    border-radius: 60px;
+   
+}
+
+.social a:hover {
+    transform: translate(-10%, 0);
+}
+.social i {
+    margin-left: 10px;
+    font-size: 30px;
+    
+}
+/* .social a:nth-child(1) i{
+    color: transparent;
+    background-color: bisque;
+    
+    
+    
+    
+} */
+.social a:nth-child(2) i{
+    /* color: transparent;
+    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1); */
+   
+    font-weight: 600;
+}
 
 .navbar {
 
