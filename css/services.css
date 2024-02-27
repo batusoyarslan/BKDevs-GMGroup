@@ -13,22 +13,25 @@ body{
 }
 
 .info-hero{
-    width: 100%;
+    position: absolute;
     height: 100vh;
-    position: relative;
-    padding: 0 5%;
+    height: 70vw;
+    z-index: 1;
+    padding-bottom: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
 }
 .navbar-content{
     position: absolute;
     height: 100vh;
-    height: 100vw;
+    height: 70vw;
     z-index: 1;
+    padding-bottom: 300px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
    
 }
