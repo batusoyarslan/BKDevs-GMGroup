@@ -13,29 +13,27 @@
     <title>GM Group | Altyapı Sistemleri</title>
 </head>
 <body>
-    <div class="info-hero">
-        <div id="video-bottom">
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="videos/deneme.mp4" type="video/mp4">
-            </video>
+    <div class="hero" id="anasayfa">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="videos/deneme.mp4" type="video/mp4">
+        </video>
+        <div class="navbar-content">
+            <nav class="navbar">
+                <img src="images/logo_gm.png" alt="" class="logo">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="#otomasyon">Otomasyon Hizmetleri Nedir?</a></li>
+                    <li><a href="#footer">İletişim</a></li>
+                </ul>
+            </nav>
             <div class="content">
                 <h1>Otomasyon Hizmetleri</h1>
                 <p>Sizi işlerinizin verimliliğini artıracak, zaman ve maliyet tasarrufu sağlayacak yenilikçi otomasyon çözümlerimizle tanışmaya davet ediyoruz.</p>
+                <button class="kesfetbutton" onclick="location.href=' #otomasyon '">Keşfet</button>
             </div>
-            <button class="gecis-button" onclick="gecisYap()">Daha Fazla ˅</button>
-        </div>   
-    </div>
-    
-    <nav class="navbar">
-        <img src="images/logo_gm.png" alt="" class="logo">
-        <ul>
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="#">Onarım Hizmetleri</a></li>
-            <li><a href="#">Yönetim Danışmanlığı</a></li>
-            <li><a href="#">İletişim</a></li>
-        </ul>
-    </nav>
-    <div class="information-page">
+        </div>
+        </div>
+    <div class="information-page" id="otomasyon">
         <div class="information-block">
             <div class="information">
                 <img src="images/otomasyon1.jpeg" alt="">
@@ -80,7 +78,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
     <div class="row-footer">
     <div class="col">
         <i class="fa-solid fa-envelope fa-xl"></i>

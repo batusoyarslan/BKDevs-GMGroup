@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="hero">
+    <div class="hero" id="anasayfa">
         <video autoplay loop muted plays-inline class="back-video">
             <source src="videos/mainvideo.mp4" type="video/mp4">
         </video>
@@ -20,16 +20,16 @@
             <nav class="navbar">
                 <img src="images/logo_gm.png" alt="" class="logo">
                 <ul>
-                    <li><a href="#deneme">Anasayfa</a></li>
-                    <li><a href="#">Onarım Hizmetleri</a></li>
-                    <li><a href="#">Yönetim Danışmanlığı</a></li>
-                    <li><a href="#">İletişim</a></li>
+                    <li><a href="#anasayfa">Anasayfa</a></li>
+                    <li><a href="#servislerimiz">Servislerimiz</a></li>
+                    <li><a href="#hakkımızda">Hakkımızda</a></li>
+                    <li><a href="#iletişimegeç">İletişim</a></li>
                 </ul>
             </nav>
             <div class="content">
                 <h1>Profesyonel Yönetim Danışmanlığı</h1>
                 <p>Her bir projede, yerel düzenlemelere uygun şekilde çalışarak, topluma değer katan altyapılar inşa etmeyi amaçlıyoruz. <br>Sizin için doğru çözümleri sunmak için buradayız.</p>
-                <button class="kesfetbutton">Keşfet</button>
+                <button class="kesfetbutton" onclick="location.href=' #servislerimiz '">Keşfet</button>
             </div>
         </div>
         </div>
@@ -51,7 +51,7 @@
             
         </div>
         <hr style="margin-top: 40px;">
-        <div class="container">
+        <div class="container" id="servislerimiz">
             <h1>SERVİSLERİMİZ</h1>
             <div class="row">
                 <div class="service">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </div>
-    <section class="about">
+    <section class="about" id="hakkımızda">
         <div class="main">
             <img src="images/gmimage.png" alt="" class="about-img">
             <div class="about-text">  
@@ -101,7 +101,7 @@
         <h5 class="about-text-h5"> GM Profesyonel Yönetim Danışmanlık Ltd Şti</h5>
         <p class="about-text-p">"GM Profesyonel Yönetim Danışmanlık olarak, geniş bir yelpazede hizmet sunan uzman kadromuzla müşterilerimize kaliteli ve kapsamlı çözümler sunuyoruz. Site Yönetimi, Güvenlik, Peyzaj Bakımı, Temizlik, Havuz Bakımı, Teknik Tesisat, Elektrik, Haşere İlaçlama, Havalandırma, Yangın Tesisatı gibi ihtiyaçlarınızda, deneyimli ekiplerimizle her detayı özenle ele alarak yaşam alanlarınızın sorunsuz bir şekilde yönetimini sağlıyoruz. <br>
          Müşteri memnuniyetini öncelikli kılarak, profesyonel danışmanlık hizmetlerimizle birlikte güvenliğinizden peyzaj düzenlemelerinize, temizlikten teknik tesisat işlerinize kadar geniş bir hizmet yelpazesi sunmaktayız. Her bir hizmetimizde kalite standartlarına uygun çalışma prensiplerimizle, yaşam alanlarınızda huzur ve güven ortamını oluşturmayı amaçlıyoruz.</p>
-         <button class="about-button" style="--clr:#F5BE51">İletişime Geç</button>
+         <button class="about-button" style="--clr:#F5BE51" onclick="location.href=' #iletişimegeç '">İletişime Geç</button>
         </div> 
         </div>
     </section>
@@ -152,7 +152,7 @@
             <img src="images/gmsertifika8.jpg" alt="">
         </div>
       </div>
-      <div class="container2">
+      <div class="container2" id="iletişimegeç">
         <div class="content2">
             <div class="image-box">
                 <img src="images/İLETİŞİM1.png" alt="">

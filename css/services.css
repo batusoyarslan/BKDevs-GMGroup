@@ -21,6 +21,17 @@ body{
     align-items: center;
     justify-content: center;
 }
+.navbar-content{
+    position: absolute;
+    height: 100vh;
+    height: 100vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+   
+}
 
 .gecis-button{
     position: fixed;
