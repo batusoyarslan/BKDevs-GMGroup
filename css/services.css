@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
+   scroll-behavior: smooth;
 }
 
 body{
@@ -67,7 +67,7 @@ body{
 .information-block{
     width: 1550px;
     height: 960px;
-    /* background-color: rgb(13, 75, 75); */
+ 
 }
 
 .information{
