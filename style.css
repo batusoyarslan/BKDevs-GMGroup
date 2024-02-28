@@ -421,7 +421,7 @@ color: #646464;
  }
  .main{
     width: 1150px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items:center;
