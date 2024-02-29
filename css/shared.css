@@ -41,11 +41,20 @@
    
 }
 
-/* @media only screen and (max-width: 900px){
+ @media only screen and (max-width: 900px){
 .navbar-content .navbar {
     justify-content: center;
 }
-}  */
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+}  
 
 
 
