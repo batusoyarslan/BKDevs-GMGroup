@@ -31,34 +31,33 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 50px;
 }
 
 .blokText{
-    width: auto;
-    height: auto;
+    max-width: 425px;
     background: rgb(196,132,2);
     background: linear-gradient(135deg, rgb(223, 159, 30) 17%, rgba(255,204,103,1) 100%);
     text-align: center;
     border-radius: 20px;
-    margin-top: 50px;
     color: whitesmoke;
-   padding: 30px 30px;
-    
+    padding: 30px 10px;
     box-shadow: 3px 3px 3px 3px rgb(221, 150, 18);
     overflow:hidden;
 }
 
 @media only screen and (max-width: 900px) {
-    .blok {
-      gap: 10%;
-      
-    }
     .blokText{
         color: #000;
         font-size: 14px;
     }
   }
 
+
+.blokHeader{
+    font-size: clamp(18px , 6vw , 28px);
+}
 
 .blokP{
    

@@ -30,8 +30,6 @@
     
 }
 .navbar-content{
-    position: absolute;
-    height: 100vh;
     height: 70vw;
     z-index: 1;
     padding-bottom: 300px;
@@ -42,16 +40,17 @@
    
 }
 
-/* @media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px){
 .navbar-content .navbar {
-    margin-bottom: 400px;
+    justify-content: center;
 }
-} */
+} 
 
 
 
 .navbar-content .navbar {
-  
+   display: flex;
+   flex-wrap: wrap; 
    position: relative;
    top: 0;
    z-index: 1000000000;
@@ -178,7 +177,7 @@ nav ul li a:hover::after{
     filter: contrast(100%) brightness(0.9) saturate(90%) blur(0.7px);
 }
 
-/* */
+/*Social */
 
 
 .social {
