@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
         setTimeout(function () {
             var video = document.getElementById("video");
-            video.src = "videos/mainvideo.mp4";
+            video.src = "mainvideo.mp4";
             video.play();
         }, 2000);
     }
