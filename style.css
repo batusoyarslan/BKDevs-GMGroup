@@ -47,7 +47,9 @@ body{
     overflow:hidden;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
+
+  
     .blokText{
         color: #000;
         font-size: 14px;
@@ -257,12 +259,22 @@ about-button:before{
       align-items: flex-start;
     }
     .about-img {
-      width: 100%;
+      width: 70%;
+     margin-left: auto;
+     margin-right: auto;
       margin-bottom: 20px;
     }
     .about-text {
       width: 100%;
+      padding: 20px;
     }
+    .container .row{
+        padding: 30px;
+    }
+    .container .row .service{
+        padding: 50px;
+    }
+    
   }
   @media only screen and (max-width: 480px) {
     .about-img {
@@ -322,12 +334,6 @@ about-button:before{
     padding-top: 20px;
     color: #fcb604;
 }
-
-
-
-
-
-
 
 .contact {
     display: flex;
