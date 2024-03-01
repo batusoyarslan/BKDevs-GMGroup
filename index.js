@@ -20,10 +20,22 @@ function gecisYap() {
 
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (window.innerWidth <= 768) {
+//         setTimeout(function () {
+//             var video = document.getElementById("video");
+//             video.src = "mainvideo.mp4";
+//             video.play();
+//         }, 2000);
+//     }
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
         setTimeout(function () {
             var video = document.getElementById("video");
+            video.removeAttribute("poster");
             video.src = "mainvideo.mp4";
             video.play();
         }, 2000);
