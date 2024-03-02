@@ -171,10 +171,6 @@ color: #646464;
     padding: 78px 0px;
     background-color: #2c2a32;
 }
- .about-img {
-    height: auto;
-    width: 420px; 
- }
 
  .about-text {
     width: 550px;
@@ -289,8 +285,6 @@ about-button:before{
 
 }
 .satir img{
-    width: 300px;
-    height: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 20px;     
