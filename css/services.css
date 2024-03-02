@@ -59,14 +59,14 @@ body{
     background: rgb(44,42,50);
     background: linear-gradient(90deg, rgba(44,42,50,1) 0%, rgba(34,33,39,1) 10%, rgba(28,28,32,1) 44%, rgba(39,37,44,1) 68%);  
     width: 100%;
-    height: 230vh;
+   height: 100%;
     justify-content: center;
     display: flex;
 }
 
 .information-block{
-    width: 1550px;
-    height: 960px;
+    width: 100%;
+    height: 100%;
  
 }
 
@@ -97,3 +97,10 @@ body{
 .information{
     margin-bottom: 110px;
 }
+
+/* @media only screen and (max-width: 768px) {
+
+    .information-page {
+      
+    }
+} */
