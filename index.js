@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             video.removeAttribute("poster");
             video.src = "mainvideo.mp4";
             video.play();
-        }, 2000);
+        }, 2);
     }
 });
