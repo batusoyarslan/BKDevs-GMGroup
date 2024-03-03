@@ -17,11 +17,29 @@
 }
 
 @media only screen and (max-width: 768px){
+
     .hero .back-video {
         max-width: 100%;
+
         
     }
 }
+
+@media (min-aspect-ratio: 16/9) {
+    .hero .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .hero .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
 
 /* Navbar */
 .navbar {
