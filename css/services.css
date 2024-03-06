@@ -83,6 +83,7 @@ body{
 .information-block img{
     height: 500px;
     border-radius: 20px;
+    width: 350px;
 }
 
 .information-text{
@@ -103,6 +104,7 @@ body{
 @media only screen and (max-width: 768px){
     .information-block img {
         height: 400px;
+        width: 200px;
     }
     .information {
         flex-direction: column-reverse;
@@ -113,6 +115,6 @@ body{
     }
 
     .navbar-content{
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
 }
