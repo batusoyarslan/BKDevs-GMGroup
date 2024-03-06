@@ -64,6 +64,10 @@
     padding: 60px;
 }
 
+.navbar-content{
+    padding-bottom: 80px;
+}
+
 }  
 @media only screen and (max-width: 1024px) {
     .content {
