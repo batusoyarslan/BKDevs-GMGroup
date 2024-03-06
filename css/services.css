@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 230vh;
+    /* height: 230vh; */
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -76,10 +76,12 @@ body{
     align-items: center;
     gap: 120px;
     margin-top: 50px;
-}
 
+    
+    
+}
 .information-block img{
-    height: 600px;
+    height: 500px;
     border-radius: 20px;
 }
 
@@ -98,9 +100,15 @@ body{
     margin-bottom: 110px;
 }
 
-/* @media only screen and (max-width: 768px) {
-
-    .information-page {
-      
+@media only screen and (max-width: 768px){
+    .information-block img {
+        height: 400px;
     }
-} */
+    .information {
+        flex-direction: column-reverse;
+    }
+    .information-text{
+        width: 100%;
+        padding: 20px;
+    }
+}

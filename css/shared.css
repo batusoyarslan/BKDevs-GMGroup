@@ -25,19 +25,6 @@
     }
 }
 
-@media (min-aspect-ratio: 16/9) {
-    .hero .back-video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .hero .back-video {
-        width: auto;
-        height: 100%;
-    }
-}
 
 
 
@@ -53,6 +40,7 @@
     border-radius: 50px;
     animation: gelis 1s ease-in-out forwards;
     
+    
 }
 .navbar-content{
     height: 70vw;
@@ -65,20 +53,23 @@
    
 }
 
- @media only screen and (max-width: 900px){
+ @media only screen and (max-width: 768px){
 .navbar-content .navbar {
     justify-content: center;
 }
 
-nav ul li {
-    margin-bottom: 20px;
-}
 
 .content{
     margin-top: 10px;
+    padding: 60px;
 }
 
 }  
+@media only screen and (max-width: 1024px) {
+    .content {
+        padding: 60px;
+    }
+}
 
 
 
@@ -105,7 +96,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: clamp(6px 3vw 16px);
     position: relative;
     z-index: 2;
     transition: color 0.5s;
@@ -264,8 +255,6 @@ nav ul li a:hover::after{
 
 .footer {
     width: 100%;
-   
-    position: absolute;
     background: #17161d;
     color: #fff;
     padding: 100px  30px;
@@ -355,10 +344,9 @@ form button {
   text-decoration: none;
   color: #ffffff;
   background-color: #df6951;
-  z-index: 100;
   cursor: pointer;
 border: none;
-transform: translate(-30%);
+transform: translate(-20%);
 }
 
 form button:hover{
@@ -372,6 +360,7 @@ form button:hover{
     }
     .col {
         flex-basis:100% ;
+        flex: 1;
     }
     .col:nth-child(2), .col:nth-child(3) {
         flex-basis:100% ;
@@ -381,4 +370,8 @@ form button:hover{
         
     }
    
+}
+
+.col {
+    flex: 1;
 }
