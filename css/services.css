@@ -55,6 +55,10 @@ body{
     transform:  scale(1.1);
 }
 
+#yan-kesfet:hover{
+    color: rgb(98, 98, 95);
+}
+
 .information-page{
     background: rgb(44,42,50);
     background: linear-gradient(90deg, rgba(44,42,50,1) 0%, rgba(34,33,39,1) 10%, rgba(28,28,32,1) 44%, rgba(39,37,44,1) 68%);  
